@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>Validação de Formulario - PROG. AMBIENTE WEB</title>
+	<meta charset="Utf-8">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="row">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4" style="background-color:rgb(211, 203, 203);">	
+			<h3 style="text-align:center;">CADASTRO</h3><br>
+			<form action="submit" method="post" name="frmcad">
+				<fieldset>
+					<legend>Dados Pessoais</legend>
+					Nome
+					<input type="text" id="name" size="60" maxlength="100" style="margin-left:21px;"><br><br>
+					E-mail
+					<input type="text" id="email" size="60" maxlength="100" style="margin-left:18px;" value="@"><br><br>
+					Idade
+					<input type="number" id="idade" size="60" style="margin-left:21;"><br><br>
+					
+					Sexo
+					<input type="radio" name="genero" id="genero" value="Masculino" checked style="margin-left:25;"> Masculino
+					<input type="radio" name="genero" id="genero" value="Feminino"> Feminino
+				</fieldset>
+				<br><br>
+				<fieldset>
+					<legend>Dados Profissionais</legend>
+					Forma de Contratação
+					<input type="radio" name="contrato" id="contrato" value="Registrado" checked style="margin-left:25;"> Registrado
+					<input type="radio" name="contrato" id="contrato" value="Contratado"> Contratado
+					<br><br>
+					Cargo
+					<select id="cargo" style="margin-left:15;">
+						<option value="1">Analista Junior</option>
+						<option value="2">Analista Pleno</option>
+						<option value="3">Analista Sênior</option>
+					</select><br><br>
+					Setor
+					<input type="text" id="setor" size="60" style="margin-left:21;"><br><br>
+					Data de Registro
+					<input type="date" id="data" size="60" style="margin-left:21;"><br><br>
+					<input id="btnSubmit" type="Submit" value="Enviar formulário" >
+					<input type="Reset" value="Apagar tudo">
+				</fieldset>
+			</form>
+		</div>
+		<div class="col-sm-4"></div>
+	</div>			
+	<script src="script.js"></script>
+</body>
+</html>
